@@ -1,0 +1,331 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMa8fp4EgNubrS9AR5OdnVF",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/dumoedas/python/blob/main/PYTHON\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#Aula 1 ⚡ ♾ ☢"
+      ],
+      "metadata": {
+        "id": "49W_gYl_vFeG"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"I competição de programação dá Start\")\n",
+        "ano = \"IX\"\n",
+        "print(ano, \"competição de programação da Start\")\n",
+        "print(f\"{ano} competição de programação da Start\")"
+      ],
+      "metadata": {
+        "id": "FrkzOCXsxMbI",
+        "outputId": "ad26cb53-ccd8-4b10-95cb-d690c8f628d9",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "I competição de programação dá Start\n",
+            "IX competição de programação da Start\n",
+            "IX competição de programação da Start\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#Aula 2  *⏰* 💥 🏢"
+      ],
+      "metadata": {
+        "id": "z1NaoVMYxA_K"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "livro_ficcao = 8\n",
+        "livro_n_ficcao = 10\n",
+        "livro_infantil = 6\n",
+        "pontos_rodrigo = livro_ficcao + livro_n_ficcao + livro_infantil\n",
+        "print(f\"Os pontos totais do Rodrigo são {pontos_rodrigo}\")"
+      ],
+      "metadata": {
+        "id": "mDOZx8-oyk_7"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#Aula 3 ⏰ ⚾ ◀"
+      ],
+      "metadata": {
+        "id": "RpmxFlQUyBdF"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "numero_de_alunos = int(input(\"Digite a quantidade de alunos: \"))\n",
+        "numero_de_monitores = int(input(\"Digite a quantidade de monitores: \"))\n",
+        "numero_de_professores = 8\n",
+        "if numero_de_alunos + numero_de_monitores <= 50:\n",
+        "  resposta_positiva = \"pode ir\"\n",
+        "resposta_negativa = \"não pode ir\"\n",
+        "if numero_de_alunos + numero_de_monitores <= 50:\n",
+        "  print(resposta_positiva)\n",
+        "else:\n",
+        "  print(resposta_negativa)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "rXNdZvyBxJc1",
+        "outputId": "fe80a8b9-3309-4460-c569-bed085e2c518"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite a quantidade de alunos: 40 \n",
+            "Digite a quantidade de monitores: 5\n",
+            "pode ir\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#Aula 4 ㊗ ⛴ ❎"
+      ],
+      "metadata": {
+        "id": "Btv6Kre8y0fC"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "P = int(input(\"Digite a posição da porta P (0 ou 1): \"))\n",
+        "R = int(input(\"Digite a posição da porta R (0 ou 1): \"))\n",
+        "if P == 0:\n",
+        "    print(\"C\")\n",
+        "elif R == 1:\n",
+        "    print(\"A\")\n",
+        "else:\n",
+        "    print(\"B\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "gSThwi4x2gSZ",
+        "outputId": "631f307a-6c33-4b19-cec3-0cb747db45d8"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite a posição da porta P (0 ou 1): 2\n",
+            "Digite a posição da porta R (0 ou 1): 6\n",
+            "B\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#Aula 5 ⚓ ⚖ ⚾ tabuada"
+      ],
+      "metadata": {
+        "id": "cneZMchR6tQo"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def tabuada(numero):\n",
+        "    for contador in range(1, 11):  # Gera números de 1 a 10\n",
+        "        print(f\"{numero} x {contador} = {numero * contador}\")\n",
+        "numero = int(input(\"Digite um número para ver sua tabuada: \"))\n",
+        "tabuada(numero)"
+      ],
+      "metadata": {
+        "id": "j11MQWYb7he9",
+        "outputId": "2d0bed57-7b76-4488-9eb3-bd9aebbc0e0f",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um número para ver sua tabuada: 10\n",
+            "10 x 1 = 10\n",
+            "10 x 2 = 20\n",
+            "10 x 3 = 30\n",
+            "10 x 4 = 40\n",
+            "10 x 5 = 50\n",
+            "10 x 6 = 60\n",
+            "10 x 7 = 70\n",
+            "10 x 8 = 80\n",
+            "10 x 9 = 90\n",
+            "10 x 10 = 100\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#Aula 6 ⏰ ▪ ✅"
+      ],
+      "metadata": {
+        "id": "i_VY3z_G9AYO"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "imc = peso / (altura ** 2)\n",
+        "print(f\"\\nSeu IMC é: {imc:.2f}\")\n",
+        "if imc < 18.5:\n",
+        "    print(\"Você está abaixo do peso.\")\n",
+        "elif 18.5 <= imc < 25:\n",
+        "    print(\"Você está no peso ideal.\")\n",
+        "elif 25 <= imc < 30:\n",
+        "    print(\"Você está com sobrepeso.\")\n",
+        "else:\n",
+        "    print(\"Você está acima do peso.\")"
+      ],
+      "metadata": {
+        "id": "zBeeciUc9myj"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from google.colab import drive\n",
+        "drive.mount('/content/drive')"
+      ],
+      "metadata": {
+        "id": "9wRGbPGt94z8"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#**Aula** **7**  ⚾ ❎ ⛽"
+      ],
+      "metadata": {
+        "id": "STxSOMS83_Q8"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Sou seu assistente virtual, como posso ajudar? \\n\")\n",
+        "nome = input(\"digite seu nome: \")\n",
+        "print(\"Olá, \" + nome + \". Qual é a sua duvida hoje?\" )\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ehMehCA14iQY",
+        "outputId": "60b306d6-3493-425e-d6d3-d40b8aaea950"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Sou seu assistente virtual, como posso ajudar? \n",
+            "\n",
+            "digite seu nome: du\n",
+            "Olá, du. Qual é a sua duvida hoje?\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Sou seu assistente virtual, como posso ajudar? \\n\")\n",
+        "nome = input(\"digite seu nome: \")\n",
+        "print(f\"Olá, {nome}. Qual é a sua duvida hoje?\" )\n",
+        "resposta = input(\"Qual o assunto que deseja tratar: Matemática, Python, Javascript \").lower()\n",
+        "print(f\"Que bom, {nome}, vamos falar sobre {resposta}\")\n"
+      ],
+      "metadata": {
+        "outputId": "3a655f22-81fc-4370-926a-1e9b555589eb",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ayCa48dO-W3w"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Sou seu assistente virtual, como posso ajudar? \n",
+            "\n",
+            "digite seu nome: du\n",
+            "Olá, du. Qual é a sua duvida hoje?\n",
+            "Qual o assunto que deseja tratar: Matemática, Python, Javascript PYthoN\n",
+            "Que bom, du, vamos falar sobre python\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
